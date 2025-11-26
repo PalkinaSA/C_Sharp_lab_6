@@ -52,16 +52,18 @@ namespace C_Sharp_lab_6.Ex1
         /// <param name="times">Сколько раз мяукнуть коту</param>
         public void meow(int times)
         {
-            if (times < 0)
+            if (times <= 0)
             {
-                Console.WriteLine("Нельзя мяукать отрицательное число раз");
+                Console.WriteLine("Нельзя мяукать неположительное число раз");
                 return;
             }
 
-            for (int i = 0; i < times; i++)
+            Console.Write($"{Name}: ");
+            for (int i = 0; i < times - 1; i++)
             {
-                meow();
+                Console.Write("мяу-");
             }
+            Console.WriteLine("мяу!");
         }
 
         /// <summary>
@@ -76,3 +78,4 @@ namespace C_Sharp_lab_6.Ex1
         }
     }
 }
+
