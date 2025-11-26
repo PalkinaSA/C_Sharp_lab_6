@@ -73,9 +73,9 @@ namespace C_Sharp_lab_6.Ex1
         /// <param name="times">Сколько раз мяукнуть электро-коту</param>
         public void meow(int times)
         {
-            if (times < 0)
+            if (times <= 0)
             {
-                Console.WriteLine("Нельзя мяукать отрицательное число раз");
+                Console.WriteLine("Нельзя мяукать неположительное число раз");
                 return;
             }
 
@@ -96,4 +96,5 @@ namespace C_Sharp_lab_6.Ex1
             return $"Электро-кот: {Name}, {EngineModel}";
         }
     }
+
 }
