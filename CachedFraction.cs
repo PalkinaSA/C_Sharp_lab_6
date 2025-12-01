@@ -9,7 +9,7 @@ namespace C_Sharp_lab_6.Ex2
     /// </summary>
     public class CachedFraction : IFractionable
     {
-        private double? _cachedDecimalValue = null;
+        private double? _cachedDoubleValue = null;
         private Fraction _fraction;
 
         /// <summary>
@@ -19,7 +19,7 @@ namespace C_Sharp_lab_6.Ex2
         public CachedFraction(Fraction fraction)
         {
             _fraction = fraction;
-            _cachedDecimalValue = fraction.GetDecimalValue();
+            _cachedDoubleValue = fraction.GetDecimalValue();
         }
 
         /// <summary>
@@ -28,11 +28,11 @@ namespace C_Sharp_lab_6.Ex2
         /// <returns>Вещественное значение дроби</returns>
         public double GetDoubleValue()
         {
-            if (_cachedDecimalValue == null)
+            if (_cachedDoubleValue == null)
             {
-                _cachedDecimalValue = _fraction.GetDoubleValue();
+                _cachedDoubleValue = _fraction.GetDoubleValue();
             }
-            return _cachedDecimalValue.Value;
+            return _cachedDoubleValue.Value;
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace C_Sharp_lab_6.Ex2
         public void SetNumerator(int number)
         {
             _fraction.SetNumerator(number);
-            _cachedDecimalValue = null;
+            _cachedDoubleValue = null;
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace C_Sharp_lab_6.Ex2
         public void SetDenominator(int number) 
         { 
             _fraction.SetDenominator(number);
-            _cachedDecimalValue = null;
+            _cachedDoubleValue = null;
         }
 
         /// <summary>
@@ -65,4 +65,5 @@ namespace C_Sharp_lab_6.Ex2
         }
     }
 }
+
 
