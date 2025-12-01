@@ -26,11 +26,11 @@ namespace C_Sharp_lab_6.Ex2
         /// Метод получения вещественного значения дроби
         /// </summary>
         /// <returns>Вещественное значение дроби</returns>
-        public double GetDecimalValue()
+        public double GetDoubleValue()
         {
             if (_cachedDecimalValue == null)
             {
-                _cachedDecimalValue = _fraction.GetDecimalValue();
+                _cachedDecimalValue = _fraction.GetDoubleValue();
             }
             return _cachedDecimalValue.Value;
         }
@@ -65,3 +65,4 @@ namespace C_Sharp_lab_6.Ex2
         }
     }
 }
+
