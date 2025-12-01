@@ -45,7 +45,7 @@ namespace C_Sharp_lab_6
             MeowCounter meowCounter = new MeowCounter(m);
             Funs.meowCare(meowCounter);
             Funs.meowCare(meowCounter);
-            Console.WriteLine($"Кот мяукал {meowCounter.MeowCount} раз");
+            Console.WriteLine(meowCounter);
         }
 
         /// <summary>
@@ -101,3 +101,4 @@ namespace C_Sharp_lab_6
     }
 
 }
+
