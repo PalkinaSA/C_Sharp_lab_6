@@ -96,3 +96,5 @@ public void meow();
 Задание 2. Дроби
 
 <img width="570" height="480" alt="Дроби" src="https://github.com/user-attachments/assets/1e2ebefc-cd26-4666-82ba-270b1215fe3e" />
+
+<img width="561" height="514" alt="Дроби 2" src="https://github.com/user-attachments/assets/1dfed767-e176-49e3-8d53-c3d3021b6ecb" />
