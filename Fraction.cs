@@ -325,7 +325,7 @@ namespace C_Sharp_lab_6.Ex2
         /// Метод получения вещественного значения дроби
         /// </summary>
         /// <returns>Дробь в вещественном виде</returns>
-        public double GetDecimalValue()
+        public double GetDoubleValue()
         {
             return (double)Numerator / Denominator;
         }
@@ -377,3 +377,4 @@ namespace C_Sharp_lab_6.Ex2
         }
     }
 }
+
