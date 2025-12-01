@@ -86,17 +86,18 @@ namespace C_Sharp_lab_6
 
             // Интерфейсы и кэширование
             Fraction f4 = new Fraction(-5, -4);
-            Console.WriteLine($"До изменения значений дроби {f4} : {f4.GetDecimalValue()}");
+            Console.WriteLine($"До изменения значений дроби {f4} : {f4.GetDoubleValue()}");
             f4.SetDenominator(5);
             f4.SetNumerator(-4);
-            Console.WriteLine($"После изменения значений дроби {f4} : {f4.GetDecimalValue()}");
+            Console.WriteLine($"После изменения значений дроби {f4} : {f4.GetDoubleValue()}");
 
             CachedFraction cachedFraction = new CachedFraction(f4);
-            Console.WriteLine($"Кэширование дроби {f4} : {cachedFraction.GetDecimalValue()}");
+            Console.WriteLine($"Кэширование дроби {f4} : {cachedFraction.GetDoubleValue()}");
             cachedFraction.SetDenominator(-5);
             cachedFraction.SetNumerator(4);
             Console.WriteLine($"Кэширование дроби {f4} после изменения параментров дроби : " +
-                cachedFraction.GetDecimalValue());
+                cachedFraction.GetDoubleValue());
         }
     }
+
 }
