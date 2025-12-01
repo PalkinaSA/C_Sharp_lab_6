@@ -13,7 +13,7 @@ namespace C_Sharp_lab_6.Ex2
         /// Основа для метода получения вещественного значения дроби
         /// </summary>
         /// <returns>Дробь в вещественном виде</returns>
-        public double GetDecimalValue();
+        public double GetDoubleValue();
 
         /// <summary>
         /// Основа для метода установки значения числителя
@@ -28,3 +28,4 @@ namespace C_Sharp_lab_6.Ex2
         public void SetDenominator(int number);
     }
 }
+
