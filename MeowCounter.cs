@@ -65,14 +65,36 @@ namespace C_Sharp_lab_6.Ex1
         }
 
         /// <summary>
+        /// Метод получения корректной формы слова "разы"
+        /// </summary>
+        /// <returns>Строка вида "раз" или "раза"</returns>
+        private string GetCorrectTimesForm()
+        {
+            int lastDigit = _meowCount % 10;
+            int lastTwoDigits = _meowCount % 100;
+
+            if (lastTwoDigits >= 11 && lastTwoDigits <= 14)
+            {
+                return "раз";
+            }
+
+            switch (lastDigit)
+            {
+                case 2 or 3 or 4: return "раза";
+                default: return "раз";
+            }
+        }
+        
+        /// <summary>
         /// Метод, возвращающий строку вида "Данные_о_мяукающем_объекте мяукает Количество_раз раз"
         /// </summary>
         /// <returns>Строка с данными о мяукающем объекте и его количестве мяуканий</returns>
         public override string ToString()
         {
-            return _meowable.ToString() + $" мяукает {MeowCount} раз";
+            return _meowable.ToString() + $" мяукнул {MeowCount} " + GetCorrectTimesForm();
         }
     }
 }
+
 
 
