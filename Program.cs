@@ -44,7 +44,7 @@ namespace C_Sharp_lab_6
             // 1.3. Количество мяуканий
             MeowCounter meowCounter = new MeowCounter(m);
             Funs.meowCare(meowCounter);
-            Funs.meowCare(meowCounter);
+            Funs.meowCare(2, meowCounter);
             Console.WriteLine(meowCounter);
         }
 
@@ -101,4 +101,5 @@ namespace C_Sharp_lab_6
     }
 
 }
+
 
